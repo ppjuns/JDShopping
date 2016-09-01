@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScrollViewContainer">
+        <attr name="children_count" format="enum">
+            <enum name="TWO" value="2"/>
+            <enum name="THREE" value="3"/>
+
+        </attr>
+    </declare-styleable>
+
+
+<declare-styleable name="DoubleScrollViewWrapper">
+    <attr name="doubleScrollViewWrapper_padding" format="integer"/>
+</declare-styleable>
+    <declare-styleable name="PageOne">
+
+        <attr name="pageone_padding" format="integer"></attr>
+    </declare-styleable>
+</resources>

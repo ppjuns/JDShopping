@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:orientation="vertical">
+
+    <com.ppjun.jdshopping.weight.DoubleScrollViewWrapper
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.ppjun.jdshopping.weight.PageOne
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F0F2F5"
+  >
+
+                    <RelativeLayout
+
+                        android:id="@+id/product_desc_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/viewpager_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp">
+
+                            <com.ppjun.jdshopping.weight.ChildViewPager
+                                android:id="@+id/pictureviewpager"
+                                android:layout_width="match_parent"
+                                android:layout_height="350dp"/>
+
+                            <Button
+                                android:id="@+id/number"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="17dp"
+                                android:background="@drawable/number_bg"
+                                android:text="1/5"
+
+                                android:textColor="@android:color/white"/>
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/product_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/viewpager_layout"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+
+                            android:paddingRight="10dp"
+                            android:text="捷波朗（Jabra）MOVE WIRELESS 沐舞 无线蓝牙 头戴式 音乐耳机 红色 自营"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:id="@+id/product_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/product_name"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="买！买！买！！！6期白条任性买单，全场满减随性搭配，22号0点至28号23：59限时优惠，优惠高至300元不限量开启开学迎新欢模式助你洪荒之力加持"
+                            android:textColor="#F23030"/>
+
+                        <TextView
+                            android:id="@+id/product_price"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@+id/product_desc"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="￥699.00"
+                            android:textColor="#F23030"
+                            android:textSize="20sp"/>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/product_desc"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/price_down_bg"
+                            android:padding="5dp"
+                            android:text="降价通知"/>
+
+                        <RelativeLayout
+                            android:id="@+id/biaotiao_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/product_price"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="8dp"
+
+                            android:background="@drawable/relativelayout_bg"
+                            android:paddingBottom="8dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="8dp">
+
+                            <TextView
+                                android:id="@+id/baitiao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center"
+                                android:text="白条"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginLeft="20dp"
+
+                                android:layout_toRightOf="@+id/baitiao"
+                                android:gravity="center"
+                                android:text="【打白条】即享6期免息/12期息费5折"/>
+
+                            <ImageView
+
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+
+                                android:src="@drawable/more"/>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/choose_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/product_desc_layout"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/relativelayout_bg"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/choose_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="已选"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/choose_to"
+                            android:text="红色 1件 增值保障"/>
+
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+
+                            android:src="@drawable/more"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/address_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/choose_layout"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/relativelayout_bg"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/address_to"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:text="送至"/>
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/address_to"
+                            android:text="广东省广州市"/>
+
+                        <TextView
+                            android:id="@+id/receiver_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/address"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/address_to"
+                            android:text="现货，15：00前下单。。。"/>
+
+                        <ImageView
+
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+
+
+                            android:src="@drawable/more"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/address_layout"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="上拉查看图文详情"
+                        android:textSize="20sp"
+                        />
+
+                </RelativeLayout>
+
+
+        </com.ppjun.jdshopping.weight.PageOne>
+
+
+
+            <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical">
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/relativelayout_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="商品介绍"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="商品介绍"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="商品介绍"/>
+
+
+                </LinearLayout>
+
+                <com.ppjun.jdshopping.weight.PageTwoWebView
+                    android:id="@+id/webview_detial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </com.ppjun.jdshopping.weight.DoubleScrollViewWrapper>
+
+</LinearLayout>
